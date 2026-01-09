@@ -6,7 +6,8 @@
     "DISABLE_ESLINT_PLUGIN": "true",
     "NPM_CONFIG_LEGACY_PEER_DEPS": "true",
     "NPM_CONFIG_FORCE": "true",
-    "NPM_CONFIG_AUDIT": "false"
+    "NPM_CONFIG_AUDIT": "false",
+    "NODE_OPTIONS": "--openssl-legacy-provider"
   },
   "build": {
     "env": {
@@ -14,7 +15,8 @@
       "GENERATE_SOURCEMAP": "false",
       "ESLINT_NO_DEV_ERRORS": "true",
       "DISABLE_ESLINT_PLUGIN": "true",
-      "NPM_CONFIG_LEGACY_PEER_DEPS": "true"
+      "NPM_CONFIG_LEGACY_PEER_DEPS": "true",
+      "NODE_OPTIONS": "--openssl-legacy-provider"
     }
   },
   "rewrites": [
