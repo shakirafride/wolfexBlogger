@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import SimpleReactValidator from "simple-react-validator";
 import {toast} from "react-toastify";
-import {Link, useNavigate} from "react-router-dom";
+import {Link, useHistory} from "react-router-dom";
 
 import './style.scss';
 
@@ -9,7 +9,7 @@ import './style.scss';
 
 const LoginPage = (props) => {
 
-    const push = useNavigate()
+    const history = useHistory()
 
     const [value, setValue] = useState({
         email: 'user@gmail.com',
@@ -47,7 +47,7 @@ const LoginPage = (props) => {
 
             if (email.match(userRegex)) {
                 toast.success('You successfully Login on Bloggar !');
-                push('/home');
+                history.push('/home');
             }
         } else {
             validator.showMessages();

@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter, Routes, Route, } from "react-router-dom";
+import { BrowserRouter, Switch, Route, } from "react-router-dom";
 
 import Homepage from '../HomePage/HomePage'
 import HeroBlogSingle from '../HeroBlogSingle/HeroBlogSingle';
@@ -35,36 +35,36 @@ const AllRoute = () => {
   return (
     <div className="App">
       <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<Homepage />} />
-          <Route path="home" element={<Homepage />} />
-          <Route path="hero-blog-single/:slug" element={<HeroBlogSingle />} />
-          <Route path="breaking-single/:slug" element={<BreakingSingle />} />
-          <Route path="highlight-single/:slug" element={<HighlightSingle />} />
-          <Route path="sponsor-single/:slug" element={<SponsoredSingle />} />
-          <Route path="features-single/:slug" element={<FeaturesSingle />} />
-          <Route path="video-single/:slug" element={<VideoNewsSingle />} />
-          <Route path='blog' element={<BlogPage />} />
-          <Route path='blog-single/:slug' element={<BlogDetails />} />
-          <Route path='blog-left-sidebar' element={<BlogPageLeft />} />
-          <Route path='blog-fullwidth' element={<BlogPageFullwidth />} />
-          <Route path='blog-single-left-sidebar/:slug' element={<BlogDetailsLeftSiide />} />
-          <Route path='blog-single-fullwidth/:slug' element={<BlogDetailsFull />} />
-          <Route path='lifestyle' element={<LifeStylePage />} />
-          <Route path='foods' element={<FoodBlogPage />} />
-          <Route path='business' element={<BusinessBlogPage />} />
-          <Route path='travels' element={<TravelBlogPage />} />
-          <Route path="shop" element={<ShopPage />} />
-          <Route path='product-single/:id' element={<ProductSinglePage />} />
-          <Route path='cart' element={<CartPage />} />
-          <Route path='checkout' element={<CheckoutPage />} />
-          <Route path='order_received' element={<OrderRecived />} />
-          <Route path='404' element={<ErrorPage />} />
-          <Route path='contact' element={<ContactPage />} />
-          <Route path='login' element={<LoginPage />} />
-          <Route path='register' element={<SignUpPage />} />
-          <Route path='forgot-password' element={<ForgotPassword />} />
-        </Routes>
+        <Switch>
+          <Route exact path="/" component={Homepage} />
+          <Route path="/home" component={Homepage} />
+          <Route path="/hero-blog-single/:slug" component={HeroBlogSingle} />
+          <Route path="/breaking-single/:slug" component={BreakingSingle} />
+          <Route path="/highlight-single/:slug" component={HighlightSingle} />
+          <Route path="/sponsor-single/:slug" component={SponsoredSingle} />
+          <Route path="/features-single/:slug" component={FeaturesSingle} />
+          <Route path="/video-single/:slug" component={VideoNewsSingle} />
+          <Route path='/blog' component={BlogPage} />
+          <Route path='/blog-single/:slug' component={BlogDetails} />
+          <Route path='/blog-left-sidebar' component={BlogPageLeft} />
+          <Route path='/blog-fullwidth' component={BlogPageFullwidth} />
+          <Route path='/blog-single-left-sidebar/:slug' component={BlogDetailsLeftSiide} />
+          <Route path='/blog-single-fullwidth/:slug' component={BlogDetailsFull} />
+          <Route path='/lifestyle' component={LifeStylePage} />
+          <Route path='/foods' component={FoodBlogPage} />
+          <Route path='/business' component={BusinessBlogPage} />
+          <Route path='/travels' component={TravelBlogPage} />
+          <Route path="/shop" component={ShopPage} />
+          <Route path='/product-single/:id' component={ProductSinglePage} />
+          <Route path='/cart' component={CartPage} />
+          <Route path='/checkout' component={CheckoutPage} />
+          <Route path='/order_received' component={OrderRecived} />
+          <Route path='/404' component={ErrorPage} />
+          <Route path='/contact' component={ContactPage} />
+          <Route path='/login' component={LoginPage} />
+          <Route path='/register' component={SignUpPage} />
+          <Route path='/forgot-password' component={ForgotPassword} />
+        </Switch>
       </BrowserRouter>
 
     </div>

@@ -1,14 +1,14 @@
 import React, {useState} from 'react';
 import SimpleReactValidator from "simple-react-validator";
 import {toast} from "react-toastify";
-import {Link, useNavigate} from "react-router-dom";
+import {Link, useHistory} from "react-router-dom";
 
 
 import './style.scss';
 
 const SignUpPage = (props) => {
 
-    const push = useNavigate()
+    const history = useHistory()
 
     const [value, setValue] = useState({
         email: '',
@@ -38,7 +38,7 @@ const SignUpPage = (props) => {
             });
             validator.hideMessages();
             toast.success('Registration Complete successfully!');
-            push('/login');
+            history.push('/login');
         } else {
             validator.showMessages();
             toast.error('Empty field is not allowed!');

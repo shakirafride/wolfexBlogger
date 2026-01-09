@@ -1,13 +1,13 @@
 import React, {useState} from 'react';
 import SimpleReactValidator from "simple-react-validator";
 import {toast} from "react-toastify";
-import {useNavigate} from "react-router-dom";
+import {useHistory} from "react-router-dom";
 
 import './style.scss';
 
 const CheckWrap = (props) => {
 
-    const push = useNavigate()
+    const history = useHistory()
 
     const [value, setValue] = useState({
         email: 'user@gmail.com',
@@ -51,7 +51,7 @@ const CheckWrap = (props) => {
 
             if (email.match(userRegex)) {
                 toast.success('Order Recived sucessfully!');
-                push('/order_received');
+                history.push('/order_received');
             }  else {
                 toast.info('user not existed!');
                 alert('user not existed! credential is : user@*****.com | vendor@*****.com | admin@*****.com');

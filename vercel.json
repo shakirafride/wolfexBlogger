@@ -3,7 +3,19 @@
     "SKIP_PREFLIGHT_CHECK": "true",
     "GENERATE_SOURCEMAP": "false",
     "ESLINT_NO_DEV_ERRORS": "true",
-    "DISABLE_ESLINT_PLUGIN": "true"
+    "DISABLE_ESLINT_PLUGIN": "true",
+    "NPM_CONFIG_LEGACY_PEER_DEPS": "true",
+    "NPM_CONFIG_FORCE": "true",
+    "NPM_CONFIG_AUDIT": "false"
+  },
+  "build": {
+    "env": {
+      "SKIP_PREFLIGHT_CHECK": "true",
+      "GENERATE_SOURCEMAP": "false",
+      "ESLINT_NO_DEV_ERRORS": "true",
+      "DISABLE_ESLINT_PLUGIN": "true",
+      "NPM_CONFIG_LEGACY_PEER_DEPS": "true"
+    }
   },
   "rewrites": [
     {
