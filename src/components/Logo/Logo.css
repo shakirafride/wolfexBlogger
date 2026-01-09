@@ -1,0 +1,40 @@
+.modern-logo {
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.modern-logo:hover {
+    transform: scale(1.05);
+}
+
+.logo-text {
+    font-family: 'Futura PT', sans-serif;
+    font-weight: 900;
+    font-size: 28px;
+    line-height: 1;
+    letter-spacing: -1px;
+}
+
+.logo-main {
+    color: #e94560;
+    margin-right: 2px;
+}
+
+.logo-sub {
+    color: #1a1a2e;
+    font-weight: 300;
+}
+
+@media (max-width: 768px) {
+    .logo-text {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo-text {
+        font-size: 20px;
+    }
+}

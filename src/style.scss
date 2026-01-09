@@ -1,0 +1,44 @@
+// Modern color scheme and typography
+body {
+    background: linear-gradient(135deg, #f8f9fa 0%, #eef2ff 100%);
+    font-family: 'Nunito Sans', sans-serif;
+    color: #333333;
+    line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Futura PT', sans-serif;
+    color: #1a1a2e;
+    font-weight: 600;
+}
+
+.btn-primary {
+    background: linear-gradient(135deg, #e94560 0%, #c73650 100%);
+    border: none;
+    border-radius: 25px;
+    padding: 12px 30px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(233, 69, 96, 0.3);
+}
+
+.btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(233, 69, 96, 0.4);
+}
+
+.card {
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 35px rgba(0, 0, 0, 0.15);
+}
+
+p {
+    color: #555555;
+}
