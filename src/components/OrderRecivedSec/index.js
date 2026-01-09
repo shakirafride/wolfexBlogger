@@ -1,10 +1,5 @@
 import React from 'react';
 import {Link} from 'react-router-dom'
-import Grid from "@material-ui/core/Grid";
-import Table from "@material-ui/core/Table";
-import TableBody from "@material-ui/core/TableBody";
-import TableRow from "@material-ui/core/TableRow";
-import TableCell from "@material-ui/core/TableCell";
 import {totalPrice} from "../../utils";
 import './style.scss'
 

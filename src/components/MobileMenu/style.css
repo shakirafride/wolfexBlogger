@@ -173,3 +173,26 @@
     width: calc(100% - 35px) !important;
     padding-left: 10px !important;
 }
+
+/* Submenu collapse functionality */
+.submenu-collapse {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+}
+
+.submenu-collapse.show {
+    max-height: 500px;
+}
+
+.responsivemenu li {
+    list-style: none;
+}
+
+.responsivemenu .subMenu {
+    padding-left: 20px;
+}
+
+.responsivemenu .subMenu li {
+    margin: 10px 0;
+}

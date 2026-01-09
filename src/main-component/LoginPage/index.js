@@ -1,11 +1,6 @@
 import React, {useState} from 'react';
-import Grid from "@material-ui/core/Grid";
 import SimpleReactValidator from "simple-react-validator";
 import {toast} from "react-toastify";
-import TextField from "@material-ui/core/TextField";
-import Button from "@material-ui/core/Button";
-import FormControlLabel from "@material-ui/core/FormControlLabel";
-import Checkbox from "@material-ui/core/Checkbox";
 import {Link, useNavigate} from "react-router-dom";
 
 import './style.scss';

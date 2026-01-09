@@ -2,7 +2,6 @@ import React, { Fragment} from "react";
 import Navbar3 from '../../components/Navbar3/Navbar3';
 import PageTitle from "../../components/pagetitle/PageTitle";
 import Scrollbar from "../../components/scrollbar/scrollbar";
-import { Button, Grid } from "@material-ui/core";
 import { Link } from "react-router-dom";
 import { connect } from "react-redux";
 import {totalPrice} from "../../utils";

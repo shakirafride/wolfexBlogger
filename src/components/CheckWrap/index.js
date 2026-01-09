@@ -1,9 +1,6 @@
 import React, {useState} from 'react';
-import Grid from "@material-ui/core/Grid";
 import SimpleReactValidator from "simple-react-validator";
 import {toast} from "react-toastify";
-import TextField from "@material-ui/core/TextField";
-import Button from "@material-ui/core/Button";
 import {useNavigate} from "react-router-dom";
 
 import './style.scss';
@@ -65,75 +62,67 @@ const CheckWrap = (props) => {
         }
     };
     return (
-        <Grid className="cardbp mt-20">
-            <Grid>
+        <div className="cardbp mt-20">
+            <div>
                 <form onSubmit={submitForm}>
-                    <Grid container spacing={3}>
-                        <Grid item sm={6} xs={12}>
-                            <TextField
-                                fullWidth
-                                label="Card holder Name"
-                                name="card_holder"
-                                value={value.card_holder}
-                                onChange={(e) => changeHandler(e)}
-                                type="text"
-                                InputLabelProps={{
-                                    shrink: true,
-                                }}
-                                className="formInput radiusNone"
-                            />
-                        </Grid>
-                        <Grid item sm={6} xs={12}>
-                            <TextField
-                                fullWidth
-                                label="Card Number"
-                                name="card_number"
-                                value={value.card_number}
-                                onChange={(e) => changeHandler(e)}
-                                type="number"
-                                InputLabelProps={{
-                                    shrink: true,
-                                }}
-                                className="formInput radiusNone"
-                            />
-                        </Grid>
-                        <Grid item sm={6} xs={12}>
-                            <TextField
-                                fullWidth
-                                label="CVV"
-                                name="cvv"
-                                value={value.cvv}
-                                onChange={(e) => changeHandler(e)}
-                                type="text"
-                                InputLabelProps={{
-                                    shrink: true,
-                                }}
-                                className="formInput radiusNone"
-                            />
-                        </Grid>
-                        <Grid item sm={6} xs={12}>
-                            <TextField
-                                fullWidth
-                                label="Expire Date"
-                                name="expire_date"
-                                value={value.expire_date}
-                                onChange={(e) => changeHandler(e)}
-                                type="date"
-                                InputLabelProps={{
-                                    shrink: true,
-                                }}
-                                className="formInput radiusNone"
-                            />
-                        </Grid>
-                        <Grid item xs={12}>
-                            <Grid className="formFooter mt-20">
-                                <Button fullWidth className="cBtn cBtnLarge cBtnTheme mt-20 ml-15" type="submit">Proceed to Checkout</Button>
-                            </Grid>
-                        </Grid>
-                    </Grid>
+                    <div className="row">
+                        <div className="col-sm-6 col-12">
+                            <div className="form-group">
+                                <label>Card holder Name</label>
+                                <input
+                                    className="form-control"
+                                    name="card_holder"
+                                    value={value.card_holder}
+                                    onChange={(e) => changeHandler(e)}
+                                    type="text"
+                                />
+                            </div>
+                        </div>
+                        <div className="col-sm-6 col-12">
+                            <div className="form-group">
+                                <label>Card Number</label>
+                                <input
+                                    className="form-control"
+                                    name="card_number"
+                                    value={value.card_number}
+                                    onChange={(e) => changeHandler(e)}
+                                    type="number"
+                                />
+                            </div>
+                        </div>
+                        <div className="col-sm-6 col-12">
+                            <div className="form-group">
+                                <label>CVV</label>
+                                <input
+                                    className="form-control"
+                                    name="cvv"
+                                    value={value.cvv}
+                                    onChange={(e) => changeHandler(e)}
+                                    type="text"
+                                />
+                            </div>
+                        </div>
+                        <div className="col-sm-6 col-12">
+                            <div className="form-group">
+                                <label>Expire Date</label>
+                                <input
+                                    className="form-control"
+                                    name="expire_date"
+                                    value={value.expire_date}
+                                    onChange={(e) => changeHandler(e)}
+                                    type="date"
+                                />
+                            </div>
+                        </div>
+                        <div className="col-12">
+                            <div className="formFooter mt-20">
+                                <button className="btn btn-primary btn-lg w-100 mt-20" type="submit">Proceed to Checkout</button>
+                            </div>
+                        </div>
+                    </div>
                 </form>
-            </Grid>
-        </Grid>
+            </div>
+        </div>
     )
 };
 

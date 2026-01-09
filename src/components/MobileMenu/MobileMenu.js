@@ -1,7 +1,4 @@
 import React, { Fragment, useState } from 'react';
-import List from "@material-ui/core/List";
-import ListItem from "@material-ui/core/List";
-import Collapse from "@material-ui/core/Collapse";
 import { Link } from "react-router-dom";
 import './style.css';
 
@@ -101,31 +98,31 @@ const MobileMenu = () => {
                 <ul className="responsivemenu">
                     {menus.map((item, mn) => {
                         return (
-                            <ListItem className={item.id === openId ? 'active' : null}  key={mn}>
+                            <li className={item.id === openId ? 'active' : null}  key={mn}>
                                 {item.submenu ?
                                     <Fragment>
                                         <p onClick={() => setOpenId(item.id === openId ? 0 : item.id)}>{item.title}
                                           <i className={item.id === openId ? 'fa fa-angle-up' : 'fa fa-angle-down'}></i>
                                         </p>
-                                        <Collapse in={item.id === openId} timeout="auto" unmountOnExit>
-                                            <List className="subMenu">
+                                        <div className={`submenu-collapse ${item.id === openId ? 'show' : ''}`}>
+                                            <ul className="subMenu">
                                                 <Fragment>
                                                     {item.submenu.map((submenu, i) => {
                                                         return (
-                                                            <ListItem key={i}>
+                                                            <li key={i}>
                                                                 <Link onClick={ClickHandler} className="active"
                                                                     to={submenu.link}>{submenu.title}</Link>
-                                                            </ListItem>
+                                                            </li>
                                                         )
                                                     })}
                                                 </Fragment>
-                                            </List>
-                                        </Collapse>
+                                            </ul>
+                                        </div>
                                     </Fragment>
                                     : <Link className="active"
                                         to={item.link}>{item.title}</Link>
                                 }
-                            </ListItem>
+                            </li>
                         )
                     })}
                 </ul>
