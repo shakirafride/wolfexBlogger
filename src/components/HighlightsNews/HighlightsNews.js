@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from 'react-router-dom'
 import Highlight from '../../api/Highlight'
-import add from '../../images/add.jpg'
+// Removed add.jpg import - only removing the 300x420 advertisement placeholder
 
 const HighlightsNews = (props) => {
 
@@ -75,9 +75,7 @@ const HighlightsNews = (props) => {
                                 ))}
 
                             </div>
-                            <div className="wpo-add-widget">
-                                <Link to="/"><img src={add} alt=""/></Link>
-                            </div>
+                            {/* Only removed the 300x420 advertisement placeholder (add.jpg) */}
                         </div>
                     </div>
                 </div>

@@ -10,9 +10,9 @@
 }
 
 .logo-text {
-    font-family: 'Futura PT', sans-serif;
-    font-weight: 900;
-    font-size: 28px;
+    font-family: 'Arial', sans-serif;
+    font-weight: 700;
+    font-size: 32px;
     line-height: 1;
     letter-spacing: -1px;
 }
@@ -23,18 +23,28 @@
 }
 
 .logo-sub {
-    color: #1a1a2e;
+    color: #ffffff;
     font-weight: 300;
+}
+
+/* Dark theme support for footer */
+.wpo-site-footer .logo-sub {
+    color: #ffffff;
+}
+
+/* Light theme support for header */
+.wpo-site-header .logo-sub {
+    color: #1a1a2e;
 }
 
 @media (max-width: 768px) {
     .logo-text {
-        font-size: 24px;
+        font-size: 28px;
     }
 }
 
 @media (max-width: 480px) {
     .logo-text {
-        font-size: 20px;
+        font-size: 24px;
     }
 }
