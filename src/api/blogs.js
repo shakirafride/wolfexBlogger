@@ -15,9 +15,9 @@ import Food1 from '../images/foods/img-1.jpg'
 import Food2 from '../images/foods/img-2.jpg' 
 import Food3 from '../images/foods/img-3.jpg' 
 
-import Business1 from '../images/business/img-1.jpg' 
-import Business2 from '../images/business/img-2.jpg' 
-import Business3 from '../images/business/img-3.jpg' 
+import Business1 from '../images/features/img-1.jpg' 
+import Business2 from '../images/features/img-2.jpg' 
+import Business3 from '../images/features/img-3.jpg' 
 
 
 

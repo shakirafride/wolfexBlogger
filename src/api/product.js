@@ -1,9 +1,9 @@
-import sp1 from '/blogger/images/products.jpg'
-import sp2 from '/blogger/images/products.jpg'
-import sp3 from '/blogger/images/products.jpg'
-import sp4 from '/blogger/images/products.jpg'
-import sp5 from '/blogger/images/products.jpg'
-import sp6 from '/blogger/images/products.jpg'
+import sp1 from '/blogger/products.jpg'
+import sp2 from '/blogger/products.jpg'
+import sp3 from '/blogger/products.jpg'
+import sp4 from '/blogger/products.jpg'
+import sp5 from '/blogger/products.jpg'
+import sp6 from '/blogger/products.jpg'
 
 
 const Prtoducts = [

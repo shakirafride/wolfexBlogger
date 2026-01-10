@@ -2,7 +2,6 @@ import React from 'react';
 import { Link } from 'react-router-dom'
 import about from '../../images/breaking-news/img-1.jpg'
 import Breaking from '../../api/breaking'
-import add from '../../images/add.jpg'
 
 const SubmitHandler = (e) => {
     e.preventDefault()
@@ -69,9 +68,6 @@ const HomeSidebar = (props) => {
                         </div>
                     ))}
 
-                </div>
-                <div className="wpo-add-widget">
-                    <Link to="/"><img src={add} alt="" /></Link>
                 </div>
             </div>
         </div>

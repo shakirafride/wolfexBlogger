@@ -3,9 +3,9 @@ import blogImg1 from "../images/features/img-1.jpg";
 import blogImg2 from "../images/features/img-2.jpg";
 import blogImg3 from "../images/features/img-3.jpg";
 
-import blogSingleImg1 from "../images/features/features-single/img-1.jpg";
-import blogSingleImg2 from "../images/features/features-single/img-2.jpg";
-import blogSingleImg3 from "../images/features/features-single/img-3.jpg";
+import blogSingleImg1 from "../images/features/img-1.jpg";
+import blogSingleImg2 from "../images/features/img-2.jpg";
+import blogSingleImg3 from "../images/features/img-3.jpg";
 
 
 

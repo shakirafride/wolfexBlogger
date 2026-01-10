@@ -67,181 +67,94 @@
     }
 
     form {
-      .inputOutline {
-        margin-bottom: 20px;
+      .form-group {
+        margin-bottom: 25px;
         
-        .MuiOutlinedInput-root {
+        label {
+          display: block;
+          margin-bottom: 8px;
+          font-size: 14px;
+          font-weight: 600;
+          color: #333;
+        }
+        
+        .form-control {
+          width: 100%;
+          padding: 16px 14px;
+          border: 2px solid rgba(102, 126, 234, 0.2);
           border-radius: 12px;
           background: rgba(255, 255, 255, 0.8);
           backdrop-filter: blur(10px);
+          font-size: 15px;
+          color: #333;
           transition: all 0.3s ease;
           
-          &:hover {
-            background: rgba(255, 255, 255, 0.9);
-            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+          &:focus {
+            outline: none;
+            border-color: #667eea;
+            background: rgba(255, 255, 255, 1);
+            box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
           }
           
-          &.Mui-focused {
-            background: rgba(255, 255, 255, 1);
-            box-shadow: 0 0 0 2px rgba(102, 126, 234, 0.3);
-          }
-        }
-        
-        label {
-          font-size: 16px;
-          background: transparent;
-          padding: 0 8px;
-          font-weight: 500;
-          color: #667eea;
-        }
-
-        input {
-          font-size: 15px;
-          letter-spacing: 0;
-          padding: 16px 14px;
-          color: #333;
-        }
-
-        input::-webkit-input-placeholder {
-          color: #999;
-          opacity: 1;
-        }
-
-        input::-moz-placeholder {
-          color: #999;
-          opacity: 1;
-        }
-
-        input:-ms-input-placeholder {
-          color: #999;
-          opacity: 1;
-        }
-
-        input:-moz-placeholder {
-          color: #999;
-          opacity: 1;
-        }
-      }
-    }
-
-    .formAction {
-      display: flex;
-      justify-content: space-between;
-      flex-wrap: nowrap;
-      margin-bottom: 30px;
-
-      label {
-        span {
-          font-size: 14px;
-          color: #666;
-          font-weight: 500;
-
-          svg {
-            width: 1.2em;
-            height: 1.2em;
+          &::placeholder {
+            color: #999;
+            opacity: 1;
           }
         }
       }
-
-      a {
-        display: block;
-        letter-spacing: 0;
-        font-size: 14px;
-        font-weight: 600;
-        color: #667eea;
-        cursor: pointer;
-        transition: all 0.3s ease 0s;
-        text-decoration: none;
-        
-        &:hover {
-          color: #764ba2;
-        }
-      }
-    }
-
-    .formFooter {
-      margin-top: 30px;
-      display: flex;
       
-      button {
-        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-        border-radius: 12px;
+      .btn {
+        width: 100%;
         padding: 16px 24px;
+        border: none;
+        border-radius: 12px;
         font-size: 16px;
         font-weight: 600;
         text-transform: none;
-        box-shadow: 0 8px 25px rgba(102, 126, 234, 0.3);
         transition: all 0.3s ease;
+        cursor: pointer;
         
-        &:hover {
-          transform: translateY(-2px);
-          box-shadow: 0 12px 35px rgba(102, 126, 234, 0.4);
+        &.btn-primary {
+          background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+          color: white;
+          box-shadow: 0 8px 25px rgba(102, 126, 234, 0.3);
+          
+          &:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 12px 35px rgba(102, 126, 234, 0.4);
+          }
         }
       }
     }
 
-    .loginWithSocial {
-      display: flex;
-      justify-content: center;
-      gap: 15px;
-      margin: 30px auto 0;
-
-      button {
-        min-width: 50px;
-        height: 50px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-        margin: 0;
-        color: #fff;
-        border-radius: 12px;
-        font-size: 18px;
-        padding: 0;
-        transition: all 0.3s ease;
-        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-
-        &:hover {
-          transform: translateY(-2px);
-          box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
-        }
-
-        &.facebook {
-          background: linear-gradient(135deg, #3b5998, #4c70ba);
-        }
-
-        &.twitter {
-          background: linear-gradient(135deg, #55acee, #1da1f2);
-        }
-
-        &.linkedin {
-          background: linear-gradient(135deg, #0077B5, #00a0dc);
-        }
-      }
-    }
-
-    .noteHelp {
+    .text-center {
       text-align: center;
       margin-top: 30px;
-      font-size: 14px;
-      letter-spacing: 0;
-      font-weight: 400;
-      color: #666;
-
-      a {
-        display: inline-block;
-        color: #667eea;
-        margin-left: 5px;
+      
+      p {
         font-size: 14px;
-        font-weight: 600;
-        cursor: pointer;
-        text-decoration: none;
-        transition: all 0.3s ease;
+        color: #666;
+        margin: 0;
         
-        &:hover {
-          color: #764ba2;
+        a {
+          color: #667eea;
+          text-decoration: none;
+          font-weight: 600;
+          margin-left: 5px;
+          transition: all 0.3s ease;
+          
+          &:hover {
+            color: #764ba2;
+          }
         }
       }
     }
   }
+}
+
+.errorMessage {
+  color: #e74c3c;
+  font-size: 12px;
+  margin-top: 5px;
+  display: block;
 }
